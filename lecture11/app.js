@@ -1,7 +1,12 @@
 let age = 32;
 let useName = 'Max'
 let hobbies = ['Sport', 'Cooking', 'Reading']
+let job = {
+    title: 'Developer',
+    place: 'New York',
+    salary: 50000,
+};
 
-alert(hobbies[0]);
-alert(hobbies[1]);
-alert(hobbies[2]);
+alert(job.title);
+alert(job.place);
+alert(job.salary);
