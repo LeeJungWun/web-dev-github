@@ -15,5 +15,7 @@ newAnchorElement.textContent = 'This leads to Google';
 let firstParagraph = document.querySelector('p');
 firstParagraph.append(newAnchorElement);
 
-let firstH1aragraph = document.querySelector('H1');
-firstH1aragraph.remove();
+let firstH1Element = document.querySelector('H1');
+firstH1Element.remove();
+
+firstParagraph.parentElement.append(firstParagraph);
