@@ -1,0 +1,17 @@
+{
+  "name": "lecture18",
+  "version": "1.0.0",
+  "description": "node js with templet",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "LEE JUNGWUN",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.6"
+  }
+}
