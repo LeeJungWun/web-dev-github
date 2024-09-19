@@ -12,5 +12,12 @@
     "cuisine": "test type2",
     "website": "https://www.a2.com",
     "description": "gooda"
+  },
+  {
+    "name": "test3",
+    "address": "test address3",
+    "cuisine": "test type3",
+    "website": "https://www.a3.com",
+    "description": "good"
   }
 ]
