@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
+const uuid = require("uuid");
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.get("/recommend", function (req, res) {
 
 app.post("/recommend", function (req, res) {
   const restaurant = req.body;
+  restaurant.id = uuid.v4();
 
   const filePath = path.join(__dirname, "data", "restaurants.json");
 

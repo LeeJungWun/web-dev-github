@@ -1,5 +1,6 @@
 [
   {
+    "id": "r1",
     "name": "test",
     "address": "test address",
     "cuisine": "test type",
@@ -7,6 +8,7 @@
     "description": "good"
   },
   {
+    "id": "r2",
     "name": "test2",
     "address": "test address2",
     "cuisine": "test type2",
@@ -14,10 +16,19 @@
     "description": "gooda"
   },
   {
+    "id": "r3",
     "name": "test3",
     "address": "test address3",
     "cuisine": "test type3",
     "website": "https://www.a3.com",
     "description": "good"
+  },
+  {
+    "name": "test4",
+    "address": "test address4",
+    "cuisine": "test type4",
+    "website": "https://www.a4.com",
+    "description": "good good",
+    "id": "d64c71e3-2112-41c5-8be6-056ca00c18cc"
   }
 ]
