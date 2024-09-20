@@ -26,9 +26,18 @@ app.get("/restaurants", function (req, res) {
   });
 });
 
-app.get("/restaurants/:rid", function (req, res) {
-  const restaurantId = req.params.rid;
-  res.render("restaurant-detail", { rid: restaurantId });
+app.get("/restaurants/:id", function (req, res) {
+  const restaurantId = req.params.id;
+
+  const filePath = path.join(__dirname, "data", "restaurants.json");
+  const fileData = fs.readFileSync(filePath);
+  const storeRestaurants = JSON.parse(fileData);
+
+  for (const restaurant of storeRestaurants) {
+    if (restaurant.id === restaurantId) {
+      return res.render("restaurant-detail", { restaurant: restaurant });
+    }
+  }
 });
 
 app.get("/recommend", function (req, res) {
